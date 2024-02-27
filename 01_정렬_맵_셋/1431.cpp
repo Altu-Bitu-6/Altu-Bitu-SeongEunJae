@@ -30,17 +30,17 @@ int cmp(string a, string b) {
 }
 
 int main() {
-    int N;
-    cin >> N;
+    int n;
+    cin >> n;
 
-    vector<string> serial(N);
-    for (int i = 0; i < N; i++) {
+    vector<string> serial(n);
+    for (int i = 0; i < n; i++) {
         cin >> serial[i];
     }
 
     sort(serial.begin(), serial.end(), cmp);
 
-    for (int i = 0; i < N; i++) {
+    for (int i = 0; i < n; i++) {
         cout << serial[i] << "\n";
     }
 
